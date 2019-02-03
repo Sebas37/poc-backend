@@ -6,13 +6,13 @@ const db = Database.getConnections();
 
 export class User extends Typegoose {
   @prop({ required: true })
-  firstName!: string;
+  firstName: string;
 
   @prop({ required: true })
-  lastName!: string;
+  lastName: string;
 
   @prop({ required: true })
-  email!: string;
+  email: string;
 }
 
 
