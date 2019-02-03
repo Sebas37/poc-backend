@@ -6,7 +6,7 @@ class UserRoutes extends DefaultRouter {
   constructor() {
     super("users");
 
-    this.createRoute("GET", `/`, this.getAllUsers, "Method that get an Offering by Id.");
+    this.createRoute("GET", `/`, this.getAllUsers, "Method that get all users");
     this.createRoute("POST", `/`, this.createUser, "Method that creates a new users.");
   }
 

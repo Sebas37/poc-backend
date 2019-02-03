@@ -7,6 +7,7 @@ export default class Router {
 
         //SWAGGER URL => http://<host>:<port>/docs
         await require('./modules/users/routes').default.register(server);
+        await require('./modules/countries/routes').default.register(server);
 
         Logger.info('Router - Finish adding routes.');
     }
